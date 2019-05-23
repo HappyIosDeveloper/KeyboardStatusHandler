@@ -28,7 +28,7 @@ extension UIViewController {
                 let isKeyboardShowing = notification.name == UIResponder.keyboardWillShowNotification
                 if let bottomConstraint = view.constraints.filter({ $0.firstAttribute == .bottom }).first {
                     bottomConstraint.constant = isKeyboardShowing ? -keyboardFrame!.height + tabBarController!.tabBar.frame.height : 0
-                    UIView.animate(withDuration: 0.5, animations: { () -> Void in
+                    UIView.animate(withDuration: 0.3, animations: { () -> Void in
                         self.view.layoutIfNeeded()
                     })
                 }
@@ -39,7 +39,7 @@ extension UIViewController {
                 let isKeyboardShowing = notification.name == UIResponder.keyboardWillShowNotification
                 if let bottomConstraint = view.constraints.filter({ $0.firstAttribute == .bottom }).first {
                     bottomConstraint.constant = isKeyboardShowing ? -keyboardFrame!.height : 0
-                    UIView.animate(withDuration: 0.5, animations: { () -> Void in
+                    UIView.animate(withDuration: 0.3, animations: { () -> Void in
                         self.view.layoutIfNeeded()
                     })
                 }
@@ -49,7 +49,7 @@ extension UIViewController {
     
     @objc private func keyboardWillHide(notification: NSNotification) {
         if let bottomConstraint = view.constraints.filter({ $0.firstAttribute == .bottom }).first {
-            UIView.animate(withDuration: 0.4) {
+            UIView.animate(withDuration: 0.3) {
                 bottomConstraint.constant = 0
                 self.view.layoutIfNeeded()
             }
