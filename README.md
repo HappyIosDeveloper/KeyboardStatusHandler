@@ -11,7 +11,10 @@ Handles old & new iOS Devices with or without notch.
 # Usage
 
 1- Just copy 'KeyboardStatusHandler.swift' file to your project.
+
 2- place your controller objects inside an ScrollView.
+
 3- call 'watchKeyboard()' function inside 'viewWillAppear' method.
+
 
 notice: if you want to dealocate you class later on, call 'stopWatchingKeyboard()' methid inside your 'viewWillDisappear' method.
