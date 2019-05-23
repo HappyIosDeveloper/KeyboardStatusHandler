@@ -1,7 +1,7 @@
 # KeyboardStatusHandler
 A simple extension to handle height of a scrollView when keyboard is going up or down.
 
-preview
+![](Preview.gif)
 
 Get ride of a bunch of codes easily buy putting this simple helper in your app.
 It's most simple way to handle a scrollView height when keyboard appears. 
